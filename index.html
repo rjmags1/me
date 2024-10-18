@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="frame-src 'self' https://www.youtube.com;">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Richard Maganini</title>
+</head>
+<body class="w-screen h-screen bg-black flex justify-center overflow-y-auto overflow-x-hidden">
+    <div class="max-w-[860px] grow px-16 text-white flex flex-col gap-12 py-20">
+        <nav class="w-full sticky">
+            <ul class="flex flex-row w-full justify-between">
+                <li class="w-full underline text-center rounded-md hover:opacity-80 hover:cursor-pointer"><a class="w-full h-full block" href="#experience">Experience</a></li>
+                <li class="w-full underline text-center rounded-md hover:opacity-80 hover:cursor-pointer"><a class="w-full h-full block" href="#projects">Projects</a></li>
+                <li class="w-full underline text-center rounded-md hover:opacity-80 hover:cursor-pointer"><a class="w-full h-full block" href="#todo">Blog</a></li>
+                <li class="w-full underline text-center rounded-md hover:opacity-80 hover:cursor-pointer"><a class="w-full h-full block" href="#todo">Tutorials</a></li>
+                <li class="w-full underline text-center rounded-md hover:opacity-80 hover:cursor-pointer"><a class="w-full h-full block" href="https://github.com/rjmags1">github</a></li>
+                <li class="w-full underline text-center rounded-md hover:opacity-80 hover:cursor-pointer"><a class="w-full h-full block" href="https://www.linkedin.com/in/richard-maganini-9793981b9/">LinkedIn</a></li>
+            </ul>
+        </nav>
+        <main class="flex flex-col gap-12 w-full">
+            <section id="about-me" class="flex flex-col gap-6 space-around w-full">
+                <h1 class="text-4xl font-serif">Richard Maganini</h1>
+                <article class="text-sm font-extralight">
+                    Self-taught software engineer. Pursuing second bachelor's in Computer Science. Previously 
+                    <span class="font-semibold">SWE at Herzog</span>. 
+                </article>            
+                <article class="text-sm font-extralight">
+                    <span class="font-semibold">Full-stack application development</span>. 
+                    Passionate about all aspects of backend development (databases, API development, 
+                    system architecture & design). I also build beautiful user interfaces.
+                </article>
+                <article class="text-sm font-extralight">
+                    Polyglot with strong fundamentals. Turing complete languages I've used: 
+                    <span class="font-semibold">C++, JavaScript, TypeScript, C#/.NET, Rust, Python, Java</span>. 
+                    Non-turing completes: 
+                    <span class="font-semibold">CSS, SQL, HTML, XML</span>. 
+                </article>
+            </section>
+            <section id="experience" class="flex flex-col gap-4 w-full">
+                <h2 class="text-2xl font-bold">Experience</h2>
+                <ul class="">
+                    <li class="flex flex-col gap-2">
+                        <h3 class="text-xl font-light italic">Software Engineer @ Herzog</h3>
+                        <ul class="flex flex-col gap-2">
+                            <li class="text-sm font-extralight">
+                                Supported a suite of applications in the rail flaw detection division.
+                            </li>
+                            <li class="text-sm font-extralight">
+                                <span class="font-semibold">Web</span> 
+                                and 
+                                <span class="font-semibold">desktop</span>
+                                application development. 
+                                <span class="font-semibold">Systems programming</span>
+                                in a large C++ program that implemented ultrasonic rail flaw detection. 
+                            </li>
+                            <li class="text-sm font-extralight">
+                                Contributions: 
+                                <span class="font-semibold">Designed audio alert subsystem</span>
+                                in the ultrasound software to notify operators of
+                                relevant structural indications. 
+                                <span class="font-semibold">Latency improvements</span>
+                                via concurrency and SQL query optimizations.
+                                UI improvements via 
+                                <span class="font-semibold">realtime load progress indicators</span> 
+                                and 
+                                <span class="font-semibold">search result pagination</span>.
+                                A variety of bugfixes and other smaller features. 
+                            </li>
+                            <li class="text-sm font-extralight">
+                                <span class="font-semibold">24/7 on-call</span> 
+                                software support rotations.
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+            <section id="projects" class="flex flex-col gap-4 w-full">
+                <h2 class="text-2xl font-bold">Projects</h2>
+                <ul class="flex flex-col gap-4">
+                    <li class="flex flex-col gap-2">
+                        <h3 class="text-xl font-light italic">
+                            disc <span class="not-italic">|</span>
+                            <a class="text-sm text-cyan-400 underline not-italic" href="https://www.youtube.com/watch?v=wQ6hk__xTK0&ab_channel=rjmaganiniapps">
+                                Video demo
+                            </a>
+                        </h3>
+                        <ul class="flex flex-col gap-2">
+                            <li class="text-sm font-extralight">
+                                <span class="font-semibold">Technologies</span>: 
+                                NextJS (React), JavaScript, SWR, PostgreSQL, Node.js, Playwright, Jest
+                            </li>
+                            <li class="text-sm font-extralight">
+                                <span class="font-semibold">Full-stack web application.</span>
+                                <span class="font-semibold">Authentication</span>
+                                implemented with encrypted session cookies and hashed+salted passwords.
+                                <span class="font-semibold">Rich interaction features</span> 
+                                - like, star, edit, delete, watch, comment on, reply to, filter posts.
+                                <span class="font-semibold">Robust test suite</span>
+                                leveraging Jest, Playwright, and fakerJS to simulate various viewport sizes on 
+                                all major browsers with representative test data.
+                                <span class="font-semibold">Pagination</span>,
+                                <span class="font-semibold">infinite scroll</span>, and other common UI patterns.
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="flex flex-col gap-2">
+                        <h3 class="text-xl font-light italic">
+                            Competitive Programming Flashcards <span class="not-italic">|</span>
+                            <a class="text-sm text-cyan-400 underline not-italic" href="https://www.youtube.com/watch?v=BzqOccz9YqA&ab_channel=rjmaganiniapps">
+                                Video demo
+                            </a>
+                        </h3>
+                        <ul class="flex flex-col gap-2">
+                            <li class="text-sm font-extralight">
+                                <span class="font-semibold">Technologies</span>: 
+                                TypeScript, React, Rust, Tauri, Diesel (ORM), Sqlite
+                            </li>
+                            <li class="text-sm font-extralight">
+                                <span class="font-semibold">Desktop application</span> 
+                                for studying competitive programming questions.
+                                <span class="font-semibold">Search features</span> 
+                                for querying questions by title, topic, and algorithmic patterns.
+                                <span class="font-semibold">Edit prompt and solutions</span>
+                                in markdown. Preloaded with leetcode question data.
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="flex flex-col gap-2">
+                        <h3 class="text-xl font-light italic">
+                            algoVis <span class="not-italic">|</span>
+                            <a class="text-sm text-cyan-400 underline not-italic" href="https://rjmags1.github.io/algoVis">
+                                Algorithm Visualization Website
+                            </a>
+                        </h3>
+                        <ul class="flex flex-col gap-2">
+                            <li class="text-sm font-extralight">
+                                <span class="font-semibold">Technologies</span>: 
+                                Vanilla JS, HTML, CSS
+                            </li>
+                            <li class="text-sm font-extralight">
+                                Visualize
+                                <span class="font-semibold">searching, sorting, and graph algorithms</span>.
+                                Toggle 
+                                <span class="font-semibold">execution speed</span>
+                                and
+                                <span class="font-semibold">input data size</span>.
+                                Supported algorithms: Bubble Sort, Insertion Sort, Selection Sort, Quick Sort,
+                                Heap Sort, Mergesort, Binary Search, Ternary Search, BFS, DFS, Dijsktra's Algorithm, Topological Sort.
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="flex flex-col gap-2">
+                        <h3 class="text-xl font-light italic">
+                            eel <span class="not-italic">|</span>
+                            <a class="text-sm text-cyan-400 underline not-italic" href="https://replit.com/@maganinirj/eel?v=1">
+                                Programming Language
+                            </a>
+                        </h3>
+                        <ul class="flex flex-col gap-2">
+                            <li class="text-sm font-extralight">
+                                <span class="font-semibold">Technologies</span>: 
+                                TypeScript, Node.js
+                            </li>
+                            <li class="text-sm font-extralight">
+                                <span class="font-semibold">Interpreter</span> 
+                                with block-scoped, stack-based memory model traverses and executes
+                                AST generated from JavaScript-like syntax tokens.
+                                Features: arrays, structs, numbers, string, booleans, null, for/while loops, continue/break statements.
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="flex flex-col gap-2">
+                        <h3 class="text-xl font-light italic">
+                            Slack Clone (in progress) <span class="not-italic">|</span>
+                            <a class="text-sm text-cyan-400 underline not-italic" href="https://github.com/rjmags1/slack-clone/blob/main/docs/design.md">
+                                Design Doc
+                            </a>
+                        </h3>
+                        <ul class="flex flex-col gap-2">
+                            <li class="text-sm font-extralight">
+                                <span class="font-semibold">Technologies</span>: 
+                                C#, ASP.NET Core, TypeScript, React, Relay, PostgreSQL, SignalR, Kafka, GraphQL
+                            </li>
+                            <li class="text-sm font-extralight">
+                                <span class="font-semibold">Realtime messaging and notifications</span> 
+                                with support for DM and channel-based chat rooms. Modern authentication leveraging
+                                <span class="font-semibold">OIDC</span> 
+                                and 
+                                <span class="font-semibold">OAuth2</span>.
+                                <span>GraphQL</span> API for non-realtime data needs.
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="flex flex-col gap-2">
+                        <h3 class="text-xl font-light italic">
+                            Leetcode Solutions <span class="not-italic">|</span>
+                            <a class="text-sm text-cyan-400 underline not-italic" href="https://github.com/rjmags1/algorithms-practice">
+                                Solutions List
+                            </a>
+                        </h3>
+                        <ul class="flex flex-col gap-2">
+                            <li class="text-sm font-extralight">
+                                <span class="font-semibold">Technologies</span>: 
+                                Python, C++
+                            </li>
+                            <li class="text-sm font-extralight">
+                                Answers to over 700 
+                                <span class="font-semibold">data structures and algorithms</span>
+                                questions with
+                                <span class="font-semibold">optimal solutions</span> 
+                                and notes.
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+        </main>
+        <footer>
+
+        </footer>
+    </div>
+</body>
+</html>
