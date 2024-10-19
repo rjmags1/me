@@ -13,8 +13,7 @@
             <ul class="flex flex-row w-full justify-between">
                 <li class="w-full underline text-center rounded-md hover:opacity-80 hover:cursor-pointer"><a class="w-full h-full block" href="#experience">Experience</a></li>
                 <li class="w-full underline text-center rounded-md hover:opacity-80 hover:cursor-pointer"><a class="w-full h-full block" href="#projects">Projects</a></li>
-                <li class="w-full underline text-center rounded-md hover:opacity-80 hover:cursor-pointer"><a class="w-full h-full block" href="#todo">Blog</a></li>
-                <li class="w-full underline text-center rounded-md hover:opacity-80 hover:cursor-pointer"><a class="w-full h-full block" href="#todo">Tutorials</a></li>
+                <li class="w-full underline text-center rounded-md hover:opacity-80 hover:cursor-pointer"><a class="w-full h-full block" href="https://www.youtube.com/playlist?list=PLi_qy5X86FZqkhdP6w7PmfX7Gy9vS4lCw">Tutorials</a></li>
                 <li class="w-full underline text-center rounded-md hover:opacity-80 hover:cursor-pointer"><a class="w-full h-full block" href="https://github.com/rjmags1">github</a></li>
                 <li class="w-full underline text-center rounded-md hover:opacity-80 hover:cursor-pointer"><a class="w-full h-full block" href="https://www.linkedin.com/in/richard-maganini-9793981b9/">LinkedIn</a></li>
             </ul>
@@ -79,21 +78,20 @@
             </section>
             <section id="projects" class="flex flex-col gap-4 w-full mb-20">
                 <h2 class="text-2xl font-bold">Projects</h2>
-                <ul class="flex flex-col gap-4">
+                <ul class="flex flex-col gap-10">
                     <li class="flex flex-col gap-2 items-center">
                         <h3 class="text-xl font-light italic w-full">
-                            disc <span class="not-italic">|</span>
-                            <a class="text-sm text-cyan-400 underline not-italic" href="https://www.youtube.com/watch?v=wQ6hk__xTK0&ab_channel=rjmaganiniapps">
-                                Video demo
-                            </a>
+                            disc
                         </h3>
-                        <iframe width="560" height="315" 
-                            class="py-3"
-                            src="https://www.youtube.com/watch?v=wQ6hk__xTK0&ab_channel=rjmaganiniapps" 
-                            title="disc video demo" 
+                        <iframe 
+                            class="w-full"
+                            height="315" src="https://www.youtube.com/embed/wQ6hk__xTK0?si=ArapT0GDojvU-Q7A&amp;start=180" 
+                            title="YouTube video player" 
                             frameborder="0" 
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                            allowfullscreen>
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            referrerpolicy="strict-origin-when-cross-origin" 
+                            allowfullscreen
+                        >
                         </iframe>
                         <ul class="flex flex-col gap-2">
                             <li class="text-sm font-extralight">
@@ -114,13 +112,21 @@
                             </li>
                         </ul>
                     </li>
-                    <li class="flex flex-col gap-2">
-                        <h3 class="text-xl font-light italic">
-                            Competitive Programming Flashcards <span class="not-italic">|</span>
-                            <a class="text-sm text-cyan-400 underline not-italic" href="https://www.youtube.com/watch?v=BzqOccz9YqA&ab_channel=rjmaganiniapps">
-                                Video demo
-                            </a>
+                    <li class="flex flex-col gap-2 items-center">
+                        <h3 class="text-xl font-light italic w-full">
+                            Competitive Programming Flashcards
                         </h3>
+                        <iframe 
+                            class="w-full"
+                            height="315" 
+                            src="https://www.youtube.com/embed/BzqOccz9YqA?si=AecL9NIjuII_TaED&amp;start=60" 
+                            title="YouTube video player" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            referrerpolicy="strict-origin-when-cross-origin" 
+                            allowfullscreen
+                        >
+                        </iframe>
                         <ul class="flex flex-col gap-2">
                             <li class="text-sm font-extralight">
                                 <span class="font-semibold">Technologies</span>: 
@@ -157,6 +163,27 @@
                                 <span class="font-semibold">input data size</span>.
                                 Supported algorithms: Bubble Sort, Insertion Sort, Selection Sort, Quick Sort,
                                 Heap Sort, Mergesort, Binary Search, Ternary Search, BFS, DFS, Dijsktra's Algorithm, Topological Sort.
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="flex flex-col gap-2">
+                        <h3 class="text-xl font-light italic">
+                            Leetcode Solutions <span class="not-italic">|</span>
+                            <a class="text-sm text-cyan-400 underline not-italic" href="https://github.com/rjmags1/algorithms-practice">
+                                Solutions List
+                            </a>
+                        </h3>
+                        <ul class="flex flex-col gap-2">
+                            <li class="text-sm font-extralight">
+                                <span class="font-semibold">Technologies</span>: 
+                                Python, C++
+                            </li>
+                            <li class="text-sm font-extralight">
+                                Answers to over 700 
+                                <span class="font-semibold">data structures and algorithms</span>
+                                questions with
+                                <span class="font-semibold">optimal solutions</span> 
+                                and notes.
                             </li>
                         </ul>
                     </li>
@@ -199,27 +226,6 @@
                                 and 
                                 <span class="font-semibold">OAuth2</span>.
                                 <span>GraphQL</span> API for non-realtime data needs.
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="flex flex-col gap-2">
-                        <h3 class="text-xl font-light italic">
-                            Leetcode Solutions <span class="not-italic">|</span>
-                            <a class="text-sm text-cyan-400 underline not-italic" href="https://github.com/rjmags1/algorithms-practice">
-                                Solutions List
-                            </a>
-                        </h3>
-                        <ul class="flex flex-col gap-2">
-                            <li class="text-sm font-extralight">
-                                <span class="font-semibold">Technologies</span>: 
-                                Python, C++
-                            </li>
-                            <li class="text-sm font-extralight">
-                                Answers to over 700 
-                                <span class="font-semibold">data structures and algorithms</span>
-                                questions with
-                                <span class="font-semibold">optimal solutions</span> 
-                                and notes.
                             </li>
                         </ul>
                     </li>
