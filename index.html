@@ -8,8 +8,8 @@
     <title>Richard Maganini</title>
 </head>
 <body class="w-screen h-screen bg-black flex justify-center overflow-y-auto overflow-x-hidden">
-    <div class="max-w-[860px] grow px-16 text-white flex flex-col gap-12 py-20">
-        <nav class="w-full sticky">
+    <div class="max-w-[860px] grow px-16 text-white flex flex-col gap-12">
+        <nav class="w-full sticky mt-20">
             <ul class="flex flex-row w-full justify-between">
                 <li class="w-full underline text-center rounded-md hover:opacity-80 hover:cursor-pointer"><a class="w-full h-full block" href="#experience">Experience</a></li>
                 <li class="w-full underline text-center rounded-md hover:opacity-80 hover:cursor-pointer"><a class="w-full h-full block" href="#projects">Projects</a></li>
@@ -23,8 +23,9 @@
             <section id="about-me" class="flex flex-col gap-6 space-around w-full">
                 <h1 class="text-4xl font-serif">Richard Maganini</h1>
                 <article class="text-sm font-extralight">
-                    Self-taught software engineer. Pursuing second bachelor's in Computer Science. Previously 
-                    <span class="font-semibold">SWE at Herzog</span>. 
+                    Self-taught software engineer. Previously 
+                    <span class="font-semibold">SWE @ Herzog</span>.
+                    Pursuing second bachelor's in Computer Science. 
                 </article>            
                 <article class="text-sm font-extralight">
                     <span class="font-semibold">Full-stack application development</span>. 
@@ -76,16 +77,24 @@
                     </li>
                 </ul>
             </section>
-            <section id="projects" class="flex flex-col gap-4 w-full">
+            <section id="projects" class="flex flex-col gap-4 w-full mb-20">
                 <h2 class="text-2xl font-bold">Projects</h2>
                 <ul class="flex flex-col gap-4">
-                    <li class="flex flex-col gap-2">
-                        <h3 class="text-xl font-light italic">
+                    <li class="flex flex-col gap-2 items-center">
+                        <h3 class="text-xl font-light italic w-full">
                             disc <span class="not-italic">|</span>
                             <a class="text-sm text-cyan-400 underline not-italic" href="https://www.youtube.com/watch?v=wQ6hk__xTK0&ab_channel=rjmaganiniapps">
                                 Video demo
                             </a>
                         </h3>
+                        <iframe width="560" height="315" 
+                            class="py-3"
+                            src="https://www.youtube.com/watch?v=wQ6hk__xTK0&ab_channel=rjmaganiniapps" 
+                            title="disc video demo" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            allowfullscreen>
+                        </iframe>
                         <ul class="flex flex-col gap-2">
                             <li class="text-sm font-extralight">
                                 <span class="font-semibold">Technologies</span>: 
@@ -217,9 +226,6 @@
                 </ul>
             </section>
         </main>
-        <footer>
-
-        </footer>
     </div>
 </body>
 </html>
