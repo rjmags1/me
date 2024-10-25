@@ -5,17 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Content-Security-Policy" content="frame-src 'self' https://www.youtube.com;">
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        const bindHamburger = () => {
+            const hamburger = document.getElementById("hamburger");
+            hamburger.addEventListener("click", () => {
+                const clicked = hamburger.style.opacity === "0.5";
+                if (clicked) {
+                    hamburger.style.opacity = "1";
+                    document.getElementById("hamburger-items").style.display = "none";
+                }
+                else {
+                    hamburger.style.opacity = "0.5";
+                    document.getElementById("hamburger-items").style.display = "flex";
+                }
+            })
+        };
+
+        document.addEventListener("DOMContentLoaded", () => bindHamburger());
+    </script>
     <title>Richard Maganini</title>
 </head>
 <body class="w-screen h-screen bg-black flex justify-center overflow-y-auto overflow-x-hidden">
     <div class="max-w-[860px] grow px-16 text-white flex flex-col gap-12">
-        <nav class="w-full sticky mt-20">
+        <img id="hamburger" class="cursor-pointer md:hidden -mb-8 mt-10 p-[1px] border-white border rounded-md" src="assets/menu-burger-white.svg" width="40" />
+        <ul id="hamburger-items" class="hidden -mb-6 flex flex-row justify-center items-center w-full flex-wrap gap-4">
+            <li class="underline text-center rounded-md hover:opacity-80 cursor-pointer"><a class="w-full h-full block" href="#experience">Experience</a></li>
+            <li class="underline text-center rounded-md hover:opacity-80 cursor-pointer"><a class="w-full h-full block" href="#projects">Projects</a></li>
+            <li class="underline text-center rounded-md hover:opacity-80 cursor-pointer"><a class="w-full h-full block" href="https://www.youtube.com/playlist?list=PLi_qy5X86FZqkhdP6w7PmfX7Gy9vS4lCw">Tutorials</a></li>
+            <li class="underline text-center rounded-md hover:opacity-80 cursor-pointer"><a class="w-full h-full block" href="https://github.com/rjmags1">github</a></li>
+            <li class="underline text-center rounded-md hover:opacity-80 cursor-pointer"><a class="w-full h-full block" href="https://www.linkedin.com/in/richard-maganini-9793981b9/">LinkedIn</a></li>
+        </ul>
+        <nav class="w-full mt-0 md:mt-20 sticky hidden md:block">
             <ul class="flex flex-row w-full justify-between">
-                <li class="w-full underline text-center rounded-md hover:opacity-80 hover:cursor-pointer"><a class="w-full h-full block" href="#experience">Experience</a></li>
-                <li class="w-full underline text-center rounded-md hover:opacity-80 hover:cursor-pointer"><a class="w-full h-full block" href="#projects">Projects</a></li>
-                <li class="w-full underline text-center rounded-md hover:opacity-80 hover:cursor-pointer"><a class="w-full h-full block" href="https://www.youtube.com/playlist?list=PLi_qy5X86FZqkhdP6w7PmfX7Gy9vS4lCw">Tutorials</a></li>
-                <li class="w-full underline text-center rounded-md hover:opacity-80 hover:cursor-pointer"><a class="w-full h-full block" href="https://github.com/rjmags1">github</a></li>
-                <li class="w-full underline text-center rounded-md hover:opacity-80 hover:cursor-pointer"><a class="w-full h-full block" href="https://www.linkedin.com/in/richard-maganini-9793981b9/">LinkedIn</a></li>
+                <li class="w-full underline text-center rounded-md hover:opacity-80 cursor-pointer"><a class="w-full h-full block" href="#experience">Experience</a></li>
+                <li class="w-full underline text-center rounded-md hover:opacity-80 cursor-pointer"><a class="w-full h-full block" href="#projects">Projects</a></li>
+                <li class="w-full underline text-center rounded-md hover:opacity-80 cursor-pointer"><a class="w-full h-full block" href="https://www.youtube.com/playlist?list=PLi_qy5X86FZqkhdP6w7PmfX7Gy9vS4lCw">Tutorials</a></li>
+                <li class="w-full underline text-center rounded-md hover:opacity-80 cursor-pointer"><a class="w-full h-full block" href="https://github.com/rjmags1">github</a></li>
+                <li class="w-full underline text-center rounded-md hover:opacity-80 cursor-pointer"><a class="w-full h-full block" href="https://www.linkedin.com/in/richard-maganini-9793981b9/">LinkedIn</a></li>
             </ul>
         </nav>
         <main class="flex flex-col gap-12 w-full">
